@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.mastheadSection {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("images/moonlight-bg.jpg");
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
