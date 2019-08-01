@@ -27,9 +27,9 @@ class Resume extends React.Component {
                 <ul>
                     <li> <span class="bold">BYU School of Accountancy Hub Technical Team, Web Developer, Feb 2019 – Present, Provo, UT</span>
                         <ul>
-                            {/* <li>Redesign and customize <Link to="https://internationalhub.org">InternationalHub.org</Link> with Wordpress tools</li>
+                            <li>Redesign and customize <a href="https://internationalhub.org">InternationalHub.org</a> with Wordpress tools</li>
                             <li>Maintain Hub websites (<a href="https://ipohub.org">IPOhub.org</a>, <a href="https://revenuehub.org">RevenueHub.org</a>) updated with current content</li>
-                            <li>Build SEO solutions and increase accessibility</li> */}
+                            <li>Build SEO solutions and increase accessibility</li>
                         </ul>
                     </li>
                     <li> <span class="bold">BYU Campus Accommodations, Financial Specialist, Sep 2018 – Dec 2018, Provo, UT</span>
