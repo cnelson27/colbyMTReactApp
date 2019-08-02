@@ -1,9 +1,11 @@
 .mastheadSection {
+  border-radius: 5px;
+  margin: 0 auto;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("images/moonlight-bg.jpg");
   height: 40vh;
-  width: 100%;
+  width: 80%;
   color: white;
 }
 
@@ -11,4 +13,15 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 15vh;
+}
+
+.footerDiv {
+  border-radius: 5px;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("images/glacier-bg.jpg");
+  width: 80%;
+  height: 60vh;
+  color: white;
 }

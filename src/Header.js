@@ -14,13 +14,4 @@ class Header extends React.Component {
   }
 }
 
-class Footer extends React.Component {
-  render () {
-    return (
-      <div class="footerDiv">
-
-      </div>
-    );
-  }
-}
-
+export default Header;

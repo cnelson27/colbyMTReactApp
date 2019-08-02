@@ -1,14 +1,10 @@
-.mastheadSection {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("images/moonlight-bg.jpg");
-  height: 40vh;
+#appContainer {
   width: 100%;
-  color: white;
 }
 
-.nameHeading {
+/* Make this only for large screens and find a way to handle small screens differently. */
+#mainContent {
+  width: 80%;
   margin: 0 auto;
-  text-align: center;
-  padding-top: 15vh;
+  min-height: 60vh
 }

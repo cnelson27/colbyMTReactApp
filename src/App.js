@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Resume from './Resume';
+import Header from './Header';
+import Footer from './Footer';
 
 class App extends React.Component {
   state = {
@@ -16,22 +18,16 @@ class App extends React.Component {
 
   render () {
     return (
-      <div id="mainContent">
+      <div id="appContainer">
         <Navbar />
-        <div class="mastheadSection">
-          <div class="nameHeading">
-            <h1 class="nameText">Colby Nelson</h1>
-            <h3 class="nameSubheading">Information Systems Student and Outdoors Enthusiast</h3>
-          </div>
-        </div>
-        <div className="row">
-      </div>
-        <div id="contentSection">
+        <Header />
+        <div id="mainContent">
           <button onClick={this.toggleResumeShow}>
             Click to Show Resume
           </button>
           {this.state.showResume ? <Resume /> : <div></div>}
         </div>
+        <Footer />
       </div>
     );
   }
