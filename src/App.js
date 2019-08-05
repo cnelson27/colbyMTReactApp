@@ -4,15 +4,18 @@ import Navbar from './Navbar';
 import Resume from './Resume';
 import Header from './Header';
 import Footer from './Footer';
+import LandingPage from './LandingPage';
 
 class App extends React.Component {
   state = {
-    showResume: false
+    showResume: false,
+    showLandingPage: true
   }
 
   toggleResumeShow = () => {
     this.setState(prevState => ({
-      showResume: !prevState.showResume
+      showResume: !prevState.showResume,
+      showLandingPage: ! prevState.showLandingPage
     }))
   }
 
@@ -22,10 +25,12 @@ class App extends React.Component {
         <Navbar />
         <Header />
         <div id="mainContent">
+          { this.state.showLandingPage ? <LandingPage /> : <div></div> }
+          { this.state.showResume ? <Resume /> : <div></div> }
           <button onClick={this.toggleResumeShow}>
             Click to Show Resume
           </button>
-          {this.state.showResume ? <Resume /> : <div></div>}
+          
         </div>
         <Footer />
       </div>
