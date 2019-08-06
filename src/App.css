@@ -6,6 +6,15 @@
 #mainContent {
   width: 80%;
   margin: 0 auto;
-  min-height: 60vh;
-  padding: 10px;
+  padding: 5vh 1vw 10vh 1vw;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+}
+
+.link-button:hover,
+.link-button:focus {
+text-decoration: none;
 }

@@ -1,18 +1,15 @@
 import React from 'react';
-import './Navbar.css';
+import { Link } from 'react';
+import './Resume.css';
 
 class Resume extends React.Component {
     render() {
     return (
             <div class="container">
                 <div>
-                <div class="col-lg-8 mx-auto">
-                <h5><span class="resumeheader">Colby Nelson</span><br />
-                Student<br/>
-                Brigham Young University<br />
-                    Provo, UT 84604</h5>
+                    <h2 class="resumeHeader">Colby Nelson</h2>
+                    <h5 class="resumeSubHeader">cnelson27@outlook.com &mdash; </h5>
                 </div>
-            <div>
                 <span class="resumeheading">Education</span>
                 <hr class="hrskills" />
                 <ul>
@@ -74,8 +71,6 @@ class Resume extends React.Component {
                     <li><span class="bold">Language Skills:</span> Fluent in Spanish, Conversational in French</li>
                     <li><span class="bold">Achievements:</span> <a href="https://is415machinelearningnelson.azurewebsites.net/Default.aspx">Azure Machine Learning Example (Contact Me Through LinkedIn for Authentication Details)</a></li>
                 </ul>
-                </div>
-            </div>
             </div>
         );
     }

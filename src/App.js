@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar';
 import Resume from './Resume';
 import Header from './Header';
 import Footer from './Footer';
@@ -22,14 +21,20 @@ class App extends React.Component {
   render () {
     return (
       <div id="appContainer">
-        <Navbar />
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link navbar-brand" href="/">Colby Nelson</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link link-button"  onClick={this.toggleResumeShow}>Resume</button>
+            </li>
+          </ul>
+        </nav>
         <Header />
         <div id="mainContent">
           { this.state.showLandingPage ? <LandingPage /> : <div></div> }
           { this.state.showResume ? <Resume /> : <div></div> }
-          <button onClick={this.toggleResumeShow}>
-            Click to Show Resume
-          </button>
           
         </div>
         <Footer />
