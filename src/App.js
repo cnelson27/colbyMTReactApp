@@ -4,6 +4,7 @@ import Resume from './Resume';
 import Header from './Header';
 import Footer from './Footer';
 import LandingPage from './LandingPage';
+import PhotoGallery from './PhotoGallery';
 
 class App extends React.Component {
   state = {
@@ -11,10 +12,25 @@ class App extends React.Component {
     showLandingPage: true
   }
 
-  toggleResumeShow = () => {
+  showResume = () => {
     this.setState(prevState => ({
-      showResume: !prevState.showResume,
-      showLandingPage: ! prevState.showLandingPage
+      showResume: prevState.showResume = true,
+      showLandingPage: prevState.showLandingPage = false,
+      showPhotos: false
+    }))
+  }
+  showLandingPage = () => {
+    this.setState(prevState => ({
+      showResume: prevState.showResume = false,
+      showLandingPage: prevState.showLandingPage = true,
+      showPhotos: false
+    }))
+  }
+  showPhotoGallery = () => {
+    this.setState(prevState => ({
+      showResume: prevState.showResume = false,
+      showLandingPage: prevState.showLandingPage = false,
+      showPhotos: true
     }))
   }
 
@@ -24,10 +40,13 @@ class App extends React.Component {
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link navbar-brand" href="/">Colby Nelson</a>
+              <button class="nav-link link-button navbar-brand"  onClick={this.showLandingPage}>Colby Nelson</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link link-button"  onClick={this.toggleResumeShow}>Resume</button>
+              <button class="nav-link link-button"  onClick={this.showResume}>Resume</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link link-button"  onClick={this.showPhotoGallery}>Photo Gallery</button>
             </li>
           </ul>
         </nav>
@@ -35,7 +54,7 @@ class App extends React.Component {
         <div id="mainContent">
           { this.state.showLandingPage ? <LandingPage /> : <div></div> }
           { this.state.showResume ? <Resume /> : <div></div> }
-          
+          { this.state.showPhotos ? <PhotoGallery /> : <div></div>}
         </div>
         <Footer />
       </div>
