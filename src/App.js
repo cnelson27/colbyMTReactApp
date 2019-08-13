@@ -9,7 +9,9 @@ import PhotoGallery from './PhotoGallery';
 class App extends React.Component {
   state = {
     showResume: false,
-    showLandingPage: true
+    showLandingPage: true,
+    showPhotos: false,
+    headerImgURL: "images/marchingmen.jpg",
   }
 
   showResume = () => {
@@ -50,7 +52,7 @@ class App extends React.Component {
             </li>
           </ul>
         </nav>
-        <Header />
+        <Header headerImgURL=state.headerImgURL/>
         <div id="mainContent">
           { this.state.showLandingPage ? <LandingPage /> : <div></div> }
           { this.state.showResume ? <Resume /> : <div></div> }
