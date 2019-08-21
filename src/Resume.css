@@ -1,8 +1,14 @@
 .resumeHeader {
     text-align: center;
 }
-
-.resumeHeader {
+/* .resumeHeader {
+    border-radius: 5px;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url("images/marchingmen.jpg");
-}
+    height: 40vh;
+    width: 80%;
+    color: white;
+} */
 

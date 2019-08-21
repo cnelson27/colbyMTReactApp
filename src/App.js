@@ -52,7 +52,7 @@ class App extends React.Component {
             </li>
           </ul>
         </nav>
-        <Header headerImgURL=state.headerImgURL/>
+        <Header />
         <div id="mainContent">
           { this.state.showLandingPage ? <LandingPage /> : <div></div> }
           { this.state.showResume ? <Resume /> : <div></div> }
