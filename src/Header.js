@@ -4,10 +4,10 @@ import './HeaderFooter.css';
 class Header extends React.Component {
   render () {
     return (
-      <div class="mastheadSection">
-        <div class="nameHeading">
-          <h1 class="nameText">Colby Nelson</h1>
-          <h3 class="nameSubheading">Information Systems Student and Outdoors Enthusiast</h3>
+      <div className="mastheadSection">
+        <div className="nameHeading">
+          <h1 className="nameText">Colby Nelson</h1>
+          <h3 className="nameSubheading">Information Systems Student and Outdoors Enthusiast</h3>
         </div>
       </div>
     );

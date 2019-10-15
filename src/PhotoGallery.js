@@ -2,28 +2,31 @@ import React from 'react';
 import './PhotoGallery.css';
 
 function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
+  return r.keys().map(r);
 }
 
-const IMAGES = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
 
 
 class PhotoGallery extends React.Component {
   render () {
     return (
       <div>
+        
         <h1>Photo Gallery</h1>
-        { IMAGES.map((img, idx) => {
+        <div className='row'>
+        {console.log(images[0])}
+        {images.map((img, idx) => {
             return (
               <img 
               key={idx}
+              className='galleryImage col-md-3'
               src={img} 
-              alt="Adventures" 
+              alt="Adventures"
             />
             )
           })}
+        </div>
     </div>
     );
   }

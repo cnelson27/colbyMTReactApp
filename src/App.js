@@ -39,16 +39,16 @@ class App extends React.Component {
   render () {
     return (
       <div id="appContainer">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <button class="nav-link link-button navbar-brand"  onClick={this.showLandingPage}>Colby Nelson</button>
+        <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <button className="nav-link link-button navbar-brand"  onClick={this.showLandingPage}>Colby Nelson</button>
             </li>
-            <li class="nav-item">
-              <button class="nav-link link-button"  onClick={this.showResume}>Resume</button>
+            <li className="nav-item">
+              <button className="nav-link link-button"  onClick={this.showResume}>Resume</button>
             </li>
-            <li class="nav-item">
-              <button class="nav-link link-button"  onClick={this.showPhotoGallery}>Photo Gallery</button>
+            <li className="nav-item">
+              <button className="nav-link link-button"  onClick={this.showPhotoGallery}>Photo Gallery</button>
             </li>
           </ul>
         </nav>
