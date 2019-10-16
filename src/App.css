@@ -1,12 +1,17 @@
 #appContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-image: url('.\images\moonlight-bg.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
 /* Make this only for large screens and find a way to handle small screens differently. */
 #mainContent {
   width: 80%;
-  margin: 0 auto;
-  padding: 5vh 1vw 10vh 1vw;
+  margin: 100px auto;
 }
 
 .link-button {
@@ -17,4 +22,35 @@
 .link-button:hover,
 .link-button:focus {
 text-decoration: none;
+}
+
+.navbar {
+  width: 60%;
+  min-width: 500px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+body {
+  background-color: #2f2e43;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 72px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
 }

@@ -1,27 +1,17 @@
-.mastheadSection {
-  border-radius: 5px;
-  margin: 0 auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("images/moonlight-bg.jpg");
-  height: 40vh;
-  width: 80%;
-  color: white;
-}
-
-.nameHeading {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 15vh;
-}
-
 .footerDiv {
+  opacity: .7;
   border-radius: 5px;
   margin: 0 auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("images/glacier-bg.jpg");
-  width: 80%;
-  height: 60vh;
+  background-color: #343a40;
+  width: 60%;
+  min-width: 500px;
+  height: 50px;
+}
+
+.footerCopy {
+  text-align: left;
   color: white;
+  height: 26px;
+  padding: 12px;
+  margin: 0;
 }

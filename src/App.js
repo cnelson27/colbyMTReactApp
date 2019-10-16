@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Resume from './Resume';
-import Header from './Header';
 import Footer from './Footer';
 import LandingPage from './LandingPage';
 import PhotoGallery from './PhotoGallery';
@@ -52,7 +51,6 @@ class App extends React.Component {
             </li>
           </ul>
         </nav>
-        <Header />
         <div id="mainContent">
           { this.state.showLandingPage ? <LandingPage /> : <div></div> }
           { this.state.showResume ? <Resume /> : <div></div> }

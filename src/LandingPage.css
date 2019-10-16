@@ -1,0 +1,14 @@
+.nameHeading {
+    height: 90vh;
+
+}
+.nameText {
+    margin-top: 40vh;
+    color: white;
+    text-align: center;
+}
+
+.nameSubheading {
+    text-align: center;
+    color: white;
+}
