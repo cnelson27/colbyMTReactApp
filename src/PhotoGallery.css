@@ -1,17 +1,15 @@
-.photoHeader {
-    border-radius: 5px;
-    margin: 0 auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url("images/marchingmen.jpg");
-    height: 40vh;
-    width: 80%;
-    color: white;
-}
-
 .galleryImage {
     padding: 2px;
     border: solid 1px black;
     border-radius: 1px;
     width: 80%;
+}
+
+.opaqueBg {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(229, 229, 229);
+    /* RGBa with 0.6 opacity */
+    background: rgba(229, 229, 229, 0.6);
+    border-radius: 5px;
+    padding: 10px;
 }

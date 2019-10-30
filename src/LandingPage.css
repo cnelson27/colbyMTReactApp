@@ -1,6 +1,5 @@
 .nameHeading {
-    height: 90vh;
-
+    height: 70vh;
 }
 .nameText {
     margin-top: 40vh;
@@ -11,4 +10,8 @@
 .nameSubheading {
     text-align: center;
     color: white;
+}
+
+.landingContent {
+    color: antiquewhite;
 }
