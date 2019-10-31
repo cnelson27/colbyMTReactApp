@@ -9,9 +9,19 @@
 }
 
 /* Make this only for large screens and find a way to handle small screens differently. */
-#mainContent {
-  width: 80%;
-  margin: 100px auto;
+@media(min-width: 800px) {
+  #mainContent {
+    width: 80%;
+    margin: 100px auto;
+  }
+}
+
+@media(max-width: 799px) {
+  #mainContent {
+    width: 80%;
+    margin: 100px auto;
+    margin-top: 200px;
+  }
 }
 
 .link-button {

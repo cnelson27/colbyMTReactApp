@@ -9,12 +9,17 @@ class Resume extends React.Component {
                 <div className="row resumeContent">
                     <div className="col-sm-12 col-md-3">
                         <img className="resumePortrait" src={portraitImg} alt="Professional Headshot Colby Nelson"/>
+                        <div className="contactInfo">
+                            <h2>Colby Nelson</h2>
+                            <a href = "mailto: cnelson27@outlook.com">
+                                <p>cnelson27@outlook.com</p>
+                            </a>
+                            <a href = "tel: 4068617250">
+                                <p>406.861.7250</p>
+                            </a>
+                        </div>
                     </div>
                     <div className="col-sm-12 col-md-9">
-                        <div>
-                            <h2 className="resumeHeader">Colby Nelson</h2>
-                            <h5 className="resumeSubHeader">cnelson27@outlook.com &mdash; </h5>
-                        </div>
                         <span className="resumeheading">Education</span>
                         <hr className="hrskills" />
                         <ul>
