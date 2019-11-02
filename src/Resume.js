@@ -22,13 +22,13 @@ class Resume extends React.Component {
                     <div className="col-sm-12 col-md-9">
                         <span className="resumeheading">Education</span>
                         <hr className="hrskills" />
-                        <ul>
-                            <li><span className="bold">Brigham Young University</span><br />
+                        <p>
+                            <span className="bold">Brigham Young University</span><br />
                             Bachelor of Science Information Systems<br />
                             April 2020<br />
                             Provo, UT
-                            </li>    
-                        </ul>
+                        </p>
+                        
                         <span className="resumeheading">Experience </span>
                         <hr className="hrskills" />
                         <ul>
