@@ -3,6 +3,10 @@ import './Resume.css';
 import portraitImg from "./images/ColbyNelsonPortrait.jpg";
 import byuLogo from "./images/BYU-Logo-sq.png";
 import churchLogo from "./images/churchLogo.jpg";
+import billingsPRLogo from "./images/billingsPR.png";
+import briconLogo from "./images/bricon.jpg";
+import ipohubLogo from "./images/ipohubLogo.png";
+import linkedInLogo from "./images/linkedInLogo.png";
 
 class Resume extends React.Component {
     render() {
@@ -12,13 +16,16 @@ class Resume extends React.Component {
                     <div className="col-sm-12 col-md-3">
                         <img className="resumePortrait" src={portraitImg} alt="Professional Headshot Colby Nelson"/>
                         <div className="contactInfo">
-                            <h2>Colby Nelson</h2>
+                            <h2 className="contactInfoHeader">
+                                Colby Nelson
+                                <a href="https://www.linkedin.com/in/colby-nelson/">
+                                    <img className="linkedInLogo" src={linkedInLogo} alt="LinkedIn Logo" />
+                                </a>
+                            </h2>
                             <a href = "mailto: cnelson27@outlook.com">
                                 <p>cnelson27@outlook.com</p>
                             </a>
-                            <a href = "tel: 4068617250">
-                                <p>406.861.7250</p>
-                            </a>
+                            
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-9">
@@ -45,6 +52,16 @@ class Resume extends React.Component {
                                 April 2021 | Provo, UT
                                 </p>
                             </div>
+                            <div className="col-sm-12 col-md-1">
+                            </div>
+                            <div className="col-sm-12 col-md-11 jobDescription">
+                                Achievements:
+                                <ul className="resumeList">
+                                    <li>Dean's List 2018-2019</li>
+                                    <li>Member Association of Information Systems</li>
+                                    <li>Member Golden Key International Honour Society</li>
+                                </ul>
+                            </div>
                         </div>
                             
                         
@@ -52,7 +69,7 @@ class Resume extends React.Component {
                         <hr className="resumeHr" />
                         <div className="jobDiv row">
                             <div className="col-sm-12 col-md-1">
-                                <img className="resumeLogo" src={byuLogo} alt="Brigham Young University Logo"/>
+                                <img className="resumeLogo" src={ipohubLogo} alt="IPOHub Logo"/>
                             </div>
                             <div className=" col-sm-12 col-md-11 jobDescription">
                                 <p>
@@ -69,7 +86,7 @@ class Resume extends React.Component {
                         </div>
                         <div className="jobDiv row">
                             <div className="col-sm-12 col-md-1">
-                                <img className="resumeLogo" src={churchLogo} alt="Church of Jesus Christ of Latter-day Saints Logo"/>
+                                <img className="resumeLogo" src={churchLogo} alt="The Church of Jesus Christ of Latter-day Saints Logo"/>
                             </div>
                             <div className="col-sm-12 col-md-11 jobDescription">
                                 <p>
@@ -102,7 +119,7 @@ class Resume extends React.Component {
                         </div>
                         <div className="jobDiv row">
                             <div className="col-sm-12 col-md-1">
-                                <img className="resumeLogo" src={churchLogo} alt="Church of Jesus Christ of Latter-day Saints Logo"/>
+                                <img className="resumeLogo" src={briconLogo} alt="Bricon Construction, Inc. Logo"/>
                             </div>
                             <div className=" col-sm-12 col-md-11 jobDescription">
                                 <p>
@@ -118,7 +135,7 @@ class Resume extends React.Component {
                         </div>
                         <div className="jobDiv row">
                             <div className="col-sm-12 col-md-1">
-                                <img className="resumeLogo" src={churchLogo} alt="Church of Jesus Christ of Latter-day Saints Logo"/>
+                                <img className="resumeLogo" src={billingsPRLogo} alt="Billings Parks and Recreation Logo"/>
                             </div>
                             <div className=" col-sm-12 col-md-11 jobDescription">
                                 <p>
@@ -148,19 +165,34 @@ class Resume extends React.Component {
                                 </ul>
                             </div>
                         </div>
-                        <h3 className="resumeheading">Education</h3>
+                        <h3 className="resumeheading">Skills and Achievements</h3>
                         <hr className="resumeHr" />
-                        <b>Information Systems Skills:</b> <br /> 
-                                <ul>
-                                    <li><span className="bold"> Experienced:</span>
-                                    Python; PHP; JavaScript; Windows App GUI; Structured Query Language (MSSQL, Oracle, PostgreSQL); Azure Machine Learning Studio; Tableau; Advanced Excel Tools (Solver, Pivot Tables, Pivot Charts, Statistics Analysis); Excel Automation (VBA); UML Diagramming; Windows Server Management (IIS, DNS, AD)
-                                    </li>
-                                    <li><span className="bold"> Proficient:</span>
-                                        C#; MVC Web Development; HTML; CSS; Wordpress
-                                    </li>
-                                </ul>
-                        <b>Language Skills:</b> Fluent in Spanish, Conversational in French <br />
-                        <b>Achievements:</b> <a href="https://is415machinelearningnelson.azurewebsites.net/Default.aspx">Azure Machine Learning Example (Contact Me Through LinkedIn for Authentication Details)</a>
+                        Information Systems Skills:
+                        <div className="isSkills">
+                            Experienced:
+                            <ul className="resumeList">
+                                <li>Programming Languages: Python, PHP, JavaScript</li>
+                                <li>Applications: Azure Machine Learning Studio, JMP, Tableau, Advanced Excel Tools (Solver, Pivot Tables, Statistical Analysis)</li>
+                                <li>Other Skills: SQL (MSSQL, Oracle, PostgreSQL), Penetration Testing, Metasploit Penetration Testing Framework</li>
+                            </ul>
+                            Proficient:
+                            <ul className="resumeList">
+                                <li>C# Programming</li>
+                                <li>HTML, CSS, Wordpress Web Development</li>
+                                <li>UML Diagramming</li>
+                                <li>Git Source Control</li>
+                            </ul>
+                        </div>
+                        Language Skills:
+                        <ul className="resumeList">
+                            <li>Fluent in Spanish, Conversational in French</li>
+                            <li>Excellent Communication Skills</li>
+                        </ul>
+                        Achievements:
+                        <ul className="resumeList">
+                            <li>AWS Cloud Practitioner Certification</li>
+                            <li><a href="https://is415machinelearningnelson.azurewebsites.net/Default.aspx">Azure Machine Learning Example</a> (Contact Me Through LinkedIn for Authentication Details)</li>
+                        </ul>
                     </div>
                 </div>
             </div>

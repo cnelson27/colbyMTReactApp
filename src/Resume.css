@@ -7,7 +7,6 @@
 }
 
 .contactInfo {
-    margin-left: 10px;
     text-align: center;
 }
 
@@ -40,4 +39,15 @@
     .jobDescription {
         padding-left: 35px;
     }
+}
+
+.isSkills {
+    padding-left: 20px;
+}
+
+.linkedInLogo {
+    width: 28px;
+    height: auto;
+    margin-bottom: .5rem;
+    margin-left: .25rem;
 }

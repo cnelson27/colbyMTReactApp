@@ -8,6 +8,7 @@ function importAll(r) {
 
 const miscImages = importAll(require.context('./images/Misc', false, /\.(png|jpe?g|svg)$/));
 const backpackingImages = importAll(require.context('./images/Backpacking2017', false, /\.(png|jpe?g|svg)$/));
+const AnnaImages = importAll(require.context('./images/Anna', false, /\.(png|jpe?g|svg)$/));
 
 
 class PhotoGallery extends React.Component {
@@ -17,16 +18,16 @@ class PhotoGallery extends React.Component {
       <div className="opaqueBg">
         <h1>Photo Gallery</h1>
         <hr />
-        <h2>Miscellaneous Adventures</h2>
+        <h2>Adventures With My Wife, Anna</h2>
         <div className='row'>
-        {miscImages.map((img, idx) => {
+        {AnnaImages.map((img, idx) => {
             return (
-              <div className='col-md-3'>
+              <div className='col-sm-6 col-md-3'>
               <img 
               key={idx}
               className='galleryImage'
               src={img} 
-              alt="Miscellaneous Adventures {idx}"
+              alt="Adventures with Anna" 
             />
             </div>
             )
@@ -37,12 +38,28 @@ class PhotoGallery extends React.Component {
         <div className='row'>
         {backpackingImages.map((img, idx) => {
             return (
-              <div className='col-md-3'>
+              <div className='col-sm-6 col-md-3'>
               <img 
               key={idx}
               className='galleryImage'
               src={img} 
-              alt="Backpacking Trip 2017 {idx}"
+              alt="Backpacking Trip 2017" 
+            />
+            </div>
+            )
+          })}
+        </div>
+        <hr />
+        <h2>Miscellaneous Adventures</h2>
+        <div className='row'>
+        {miscImages.map((img, idx) => {
+            return (
+              <div className='col-sm-6 col-md-3'>
+              <img 
+              key={idx}
+              className='galleryImage'
+              src={img} 
+              alt="Miscellaneous Adventures"
             />
             </div>
             )

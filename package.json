@@ -1,5 +1,6 @@
 {
   "name": "colbymt-app",
+  "homepage": "colbymt.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
