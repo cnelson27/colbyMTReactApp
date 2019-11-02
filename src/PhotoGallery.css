@@ -9,7 +9,7 @@
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(229, 229, 229);
     /* RGBa with 0.6 opacity */
-    background: rgba(229, 229, 229, 0.6);
+    background: rgba(229, 229, 229, 0.8);
     border-radius: 5px;
     padding: 10px;
 }

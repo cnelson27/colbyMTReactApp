@@ -4,7 +4,6 @@
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    margin-left: 10px;
 }
 
 .contactInfo {
@@ -14,4 +13,31 @@
 
 .contactInfo > a > p {
     margin-bottom: 0;
+}
+
+.resumeLogo {
+    width: auto;
+    height: 100%;
+    max-height: 65px;
+    margin-bottom: 10px;
+}
+
+.resumeHr {
+    margin-top: 2px;
+}
+
+.resumeList {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .jobDescription {
+        padding-left: 50px;
+    }
+}
+@media (min-width: 1024px) {
+    .jobDescription {
+        padding-left: 35px;
+    }
 }
