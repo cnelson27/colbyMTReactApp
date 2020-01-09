@@ -78,9 +78,8 @@ class Resume extends React.Component {
                                 Feb 2019&ndash;Present | Provo, UT
                                 </p>
                                 <ul className="resumeList">
-                                    <li>Redesign and customize <a href="https://internationalhub.org">InternationalHub.org</a> with Wordpress tools</li>
-                                    <li>Maintain Hub websites (<a href="https://ipohub.org">IPOhub.org</a>, <a href="https://revenuehub.org">RevenueHub.org</a>) updated with current content</li>
-                                    <li>Build SEO solutions and increase accessibility</li>
+                                    <li>Manage development team supporting <a href="https://internationalhub.org">InternationalHub.org</a>, <a href="https://ipohub.org">IPOhub.org</a>, and <a href="https://revenuehub.org">RevenueHub.org</a></li>
+                                    <li>Increased site visits 150% in first year with SEO solutions</li>
                                 </ul>
                             </div>
                         </div>
@@ -95,8 +94,8 @@ class Resume extends React.Component {
                                 May&ndash;Aug 2019 | Riverton, UT
                                 </p>
                                 <ul className="resumeList">
-                                    <li>Planned and developed automated C# testing suite for international student loan program</li>
-                                    <li>Participated in Scrum-style Agile development team</li>
+                                    <li>Designed automated C# test suite for Dynamics CRM-based international loan program</li>
+                                    <li>Set and met goals in Scrum-style Agile development team</li>
                                     <li>Increased number of automated tests by nearly 50% in test suite from 42 to 59</li>
                                 </ul>
                             </div>
@@ -112,7 +111,7 @@ class Resume extends React.Component {
                                 Sep&ndash;Dec 2018 | Provo, UT
                                 </p>
                                 <ul className="resumeList">
-                                    <li>Act as customer service representative addressing residents’ concerns and complaints</li>
+                                    <li>Acted as a customer service representative addressing residents’ concerns and complaints</li>
                                     <li>Created live Tableau report saving 30 minutes/day of employee time</li>
                                 </ul>
                             </div>
@@ -144,8 +143,8 @@ class Resume extends React.Component {
                                 May&ndash;Aug 2017 | Billings, MT
                                 </p>
                                 <ul className="resumeList">
-                                    <li>I planned and executed summer camp activities allowing operation of 3 simultaneous camps.</li>
-                                    <li>I led a team of eight counselors improving risk avoidance and employee scheduling.</li>
+                                    <li>Planned and executed summer camp activities allowing operation of three simultaneous camps.</li>
+                                    <li>Managed a team of eight counselors improving risk avoidance and employee scheduling.</li>
                                 </ul>
                             </div>
                         </div>
@@ -160,8 +159,8 @@ class Resume extends React.Component {
                                 Aug 2014&ndash;Aug 2016 | Santiago, Chile
                                 </p>
                                 <ul className="resumeList">
-                                    <li>I led a team of 10 in setting and meeting goals.</li>
-                                    <li>I developed processes for maintaining reliable financial records as a financial secretary.</li>
+                                    <li>Led a team of 10 in setting and meeting goals.</li>
+                                    <li>Developed processes for maintaining reliable financial records as a financial secretary.</li>
                                 </ul>
                             </div>
                         </div>
@@ -181,6 +180,7 @@ class Resume extends React.Component {
                                 <li>HTML, CSS, Wordpress Web Development</li>
                                 <li>UML Diagramming</li>
                                 <li>Git Source Control</li>
+                                <li>AWS Architecture</li>
                             </ul>
                         </div>
                         Language Skills:
@@ -191,6 +191,7 @@ class Resume extends React.Component {
                         Achievements:
                         <ul className="resumeList">
                             <li>AWS Cloud Practitioner Certification</li>
+                            <li>AWS Solutions Architect &ndash; Associate</li>
                             <li><a href="https://is415machinelearningnelson.azurewebsites.net/Default.aspx">Azure Machine Learning Example</a> (Contact Me Through LinkedIn for Authentication Details)</li>
                         </ul>
                     </div>
