@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-image: url('.\images\moonlight-bg.jpg');
+  background-image: url('./images/moonlight-bg.jpg');
   background-size: cover;
   height: 100vh;
 }
@@ -64,10 +64,16 @@ h3 {
 
 p {
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+div {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
 }
 
 ul {
   padding-left: 15px;
   list-style: circle;
 }
+

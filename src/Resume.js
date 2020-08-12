@@ -6,6 +6,7 @@ import churchLogo from "./images/churchLogo.jpg";
 import billingsPRLogo from "./images/billingsPR.png";
 import briconLogo from "./images/bricon.jpg";
 import ipohubLogo from "./images/ipohubLogo.png";
+import HPLogo from "./images/hp.png";
 import linkedInLogo from "./images/linkedInLogo.png";
 
 class Resume extends React.Component {
@@ -80,6 +81,22 @@ class Resume extends React.Component {
                                 <ul className="resumeList">
                                     <li>Manage development team supporting <a href="https://internationalhub.org">InternationalHub.org</a>, <a href="https://ipohub.org">IPOhub.org</a>, and <a href="https://revenuehub.org">RevenueHub.org</a></li>
                                     <li>Increased site visits 150% in first year with SEO solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="jobDiv row">
+                            <div className="col-sm-12 col-md-1">
+                                <img className="resumeLogo" src={HPLogo} alt="HP Inc Logo"/>
+                            </div>
+                            <div className=" col-sm-12 col-md-11 jobDescription">
+                                <p>
+                                Quality Data Analyst Intern<br />
+                                HP, Inc.<br />
+                                May&ndash;Aug 2020 | Boise, ID
+                                </p>
+                                <ul className="resumeList">
+                                    <li>Identified printer maintenance service segments with high reservice rates using Power BI visualizations</li>
+                                    <li>Created Python text classification model to categorize text data into eight categories</li>
                                 </ul>
                             </div>
                         </div>
@@ -170,13 +187,13 @@ class Resume extends React.Component {
                         <div className="isSkills">
                             Experienced:
                             <ul className="resumeList">
-                                <li>Programming Languages: Python, PHP, JavaScript</li>
-                                <li>Applications: Azure Machine Learning Studio, JMP, Tableau, Advanced Excel Tools (Solver, Pivot Tables, Statistical Analysis)</li>
-                                <li>Other Skills: SQL (MSSQL, Oracle, PostgreSQL), Penetration Testing, Metasploit Penetration Testing Framework</li>
+                                <li>Programming Languages: C#, PHP, JavaScript</li>
+                                <li>Applications: Azure Machine Learning Studio, JMP, Tableau, Power BI, Advanced Excel Tools (Solver, Pivot Tables, Statistical Analysis)</li>
+                                <li>Other Skills: SQL (MSSQL, Oracle, PostgreSQL), Natural Language Processing, Text Analytics, Data Visualization</li>
                             </ul>
                             Proficient:
                             <ul className="resumeList">
-                                <li>C# Programming</li>
+                                <li>Python Programming</li>
                                 <li>HTML, CSS, Wordpress Web Development</li>
                                 <li>UML Diagramming</li>
                                 <li>Git Source Control</li>
